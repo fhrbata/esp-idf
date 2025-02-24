@@ -96,6 +96,17 @@ body:
     validations:
       required: false
   - type: textarea
+    id: diag
+    attributes:
+      label: Diagnostic report archive.
+      description: |
+        Diagnostic report for ESP-IDF created using [idf.py diag](http://FIXME_ONCE_DOCS_IS_MERGED_AND_PUBLISHED) or [esp-idf-diag](https://github.com/espressif/esp-idf-diag).
+
+        NOTE: The `idf.py diag` command is currently available only in the master branch of ESP-IDF. For other versions, please use the esp-idf-diag command.
+      placeholder: Please attach the diagnostic report zip file here.
+    validations:
+      required: false
+  - type: textarea
     id: more-info
     attributes:
       label: More Information.
